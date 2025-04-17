@@ -44,17 +44,10 @@ let articleId = 0;
 test.describe('Interact with the API and UI - Create with UI, Delete with API', () => {
     test.afterEach(async({page, request}) => {
         //Delete with the api
-        // const response = await request.post('https://conduit-api.bondaracademy.com/api/users/login', {
-        //     data: loginData
-        // });
-        // const body = await response.json();
-        // const token = await body.user.token;
-        // expect(await body.user.username).toBe('cristian.davila');
-
         const deleteRequest = await request.delete(`https://conduit-api.bondaracademy.com/api/articles/${articleId}`, {
-            // headers: {
-            //     Authorization: `Token ${token}`
-            // }
+            headers: {
+                Authorization: `Token ${process.env.ACCESS_TOKEN}`
+            }
         });
         
         // test was deleted
