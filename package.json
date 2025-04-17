@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ui-api-chrome":"npx playwright test ui.api.spec.ts --project=chromium --headed",
+    "ui-api-firefox":"npx playwright test ui.api.spec.ts --project=firefox --headed",
+    "ui-api-all": "npm run ui-api-chrome && npm run ui-api-firefox",
+    "ui-api-all-parallel": "npm run ui-api-chrome & npm run ui-api-firefox"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
