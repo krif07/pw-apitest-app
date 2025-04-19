@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ui-api-chrome":"npx playwright test ui.api.spec.ts --project=chromium --headed",
-    "ui-api-firefox":"npx playwright test ui.api.spec.ts --project=firefox --headed",
+    "ui-api-chrome": "npx playwright test ui.api.spec.ts --project=regression --headed",
     "ui-api-all": "npm run ui-api-chrome && npm run ui-api-firefox",
-    "ui-api-all-parallel": "npm run ui-api-chrome & npm run ui-api-firefox"
+    "ui-api-all-parallel": "npm run ui-api-chrome & npm run ui-api-firefox",
+    "likes-counter": "npx playwright test --project=likeCounter --headed"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,8 @@
   "devDependencies": {
     "@playwright/test": "^1.51.1",
     "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "pw-apitest-app": "file:"
   }
 }
