@@ -1,0 +1,10 @@
+{
+    "article": {
+        "title": "Global Test Automation article with Playwright",
+        "description": "Global This is an article for people who whants to learn to automatize tests.",
+        "body": "Global Here we are going to learn how to write test with Playwright.",
+        "tagList": [
+            "Automation", "Playwright", "Global"
+        ]
+    }
+}

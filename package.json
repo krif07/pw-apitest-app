@@ -7,7 +7,8 @@
     "ui-api-chrome": "npx playwright test ui.api.spec.ts --project=regression --headed",
     "ui-api-all": "npm run ui-api-chrome && npm run ui-api-firefox",
     "ui-api-all-parallel": "npm run ui-api-chrome & npm run ui-api-firefox",
-    "likes-counter": "npx playwright test --project=likeCounter --headed"
+    "likes-counter": "npx playwright test --project=likeCounter --headed",
+    "likes-counter-g": "npx playwright test --project=likeCounterGlobal --headed"
   },
   "keywords": [],
   "author": "",
